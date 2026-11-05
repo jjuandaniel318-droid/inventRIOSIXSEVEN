@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+:root { font-family: 'DM Sans', sans-serif; background: #f3f6f4; color: #17251f; margin: 0; }
+* { box-sizing: border-box; }
+.hidden { display: none !important; }
+
+/* --- LOGIN --- */
+.auth-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+.auth-card { width: 100%; max-width: 400px; padding: 30px; text-align: center; }
+.auth-form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.auth-form label { text-align: left; font-size: 14px; font-weight: bold; display: flex; flex-direction: column; gap: 5px; }
+.auth-form input { padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; }
+.auth-links { display: flex; flex-direction: column; gap: 8px; font-size: 13px; margin-top: 15px; }
+.auth-links a { color: #167449; font-weight: bold; text-decoration: none; }
+.divider { color: #888; margin: 5px 0; }
+.button { padding: 12px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; transition: 0.2s; }
+.button:hover { opacity: 0.9; }
+.primary { background: #167449; color: white; width: 100%; }
+.secondary { background: #edf3ef; color: #315441; width: 100%; }
+.danger { background: #b53b3b; color: white; width: auto; }
+.message { margin-top: 15px; font-size: 14px; min-height: 20px; }
+
+/* --- INVENTARIO --- */
+.topbar { background: #123b2d; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+.topbar h1 { margin: 0; font-size: 24px; }
+.topbar-actions { display: flex; gap: 10px; align-items: center; }
+.badge { background: #244f40; padding: 6px 12px; border-radius: 20px; font-size: 12px; }
+.container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+.stat-card, .panel { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.stat-card span { display: block; font-size: 13px; color: #666; margin-bottom: 8px; }
+.stat-card strong { font-size: 24px; }
+.panel { margin-bottom: 20px; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.form-grid input { padding: 10px; border: 1px solid #ccc; border-radius: 8px; width: 100%; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 12px; border-bottom: 1px solid #eee; text-align: left; font-size: 14px; }
+th { background: #f9f9f9; color: #555; }
+.actions { display: flex; gap: 5px; }
+.small-button { padding: 6px 10px; border: 1px solid #ddd; background: white; border-radius: 5px; cursor: pointer; font-size: 12px; }
+.small-button.delete { color: #b53b3b; border-color: #f5c6c6; }
+.search { padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+.empty { text-align: center; color: #888; }
+footer { text-align: center; padding: 20px; color: #888; font-size: 12px; }
+
+@media (max-width: 600px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .topbar { flex-direction: column; align-items: flex-start; }
+}
